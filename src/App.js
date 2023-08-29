@@ -8,9 +8,12 @@ import Contacts from "./scenes/contacts";
 import FormPage from "./scenes/form";
 import Calendar from "./scenes/calendar";
 import FAQPage from "./scenes/faq";
+import BarPage from "./scenes/bar";
+import PiePage from "./scenes/pie";
 
 import { Route, Routes } from "react-router-dom";
 import { CssBaseline, ThemeProvider } from "@mui/material";
+import LinePage from "./scenes/line";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -32,10 +35,10 @@ function App() {
               <Route path="/form" element={<FormPage />} />
               <Route path="/calendar" element={<Calendar />} />
               <Route path="/faq" element={<FAQPage />} />
-              {/*  <Route path="/bar" element={<Bar />} />
-              <Route path="/pie" element={<Pie />} />
-              <Route path="/line" element={<Line />} />
-              <Route path="/geography" element={<Geography />} /> */}
+               <Route path="/bar" element={<BarPage />} />
+              <Route path="/pie" element={<PiePage />} />
+               <Route path="/line" element={<LinePage />} />
+              {/*<Route path="/geography" element={<Geography />} /> */}
             </Routes>
           </main>
         </div>
