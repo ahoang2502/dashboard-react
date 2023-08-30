@@ -14,6 +14,7 @@ import PiePage from "./scenes/pie";
 import { Route, Routes } from "react-router-dom";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import LinePage from "./scenes/line";
+import GeographyPage from "./scenes/geography";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -38,7 +39,7 @@ function App() {
                <Route path="/bar" element={<BarPage />} />
               <Route path="/pie" element={<PiePage />} />
                <Route path="/line" element={<LinePage />} />
-              {/*<Route path="/geography" element={<Geography />} /> */}
+              <Route path="/geography" element={<GeographyPage />} />
             </Routes>
           </main>
         </div>

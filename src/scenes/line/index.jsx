@@ -16,3 +16,4 @@ const LinePage = () => {
 };
 
 export default LinePage;
+
